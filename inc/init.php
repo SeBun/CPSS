@@ -14,9 +14,22 @@
 
 defined('_CPSS') or die;
 
- 
+
 /**
- * Подключаем конфигурацию системы.
+ * Проверяем на совместимость с используемой версией PHP. Версия должна быть не ниже 5.3.10
+ * @todo Возможно, лучше сначала инициализировать CPSS, а затем, используя класс, вывести оформленное сообщение,
+ * @todo а не просто строку. Так же, возможно, не лучшим решением будет полная остановка работы сайта. Возможно, просто
+ * @todo отключать CPSS, если версия PHP не соответствует допустимой, а уведомлять только в логах, сообщениях на почту и т.д.
+ * @todo То есть для посетителя работа должна оставаться незаметной.
+ */
+if (version_compare(PHP_VERSION, '5.6.0', '<'))
+{
+    die('Your host needs to use PHP 5.3.10 or higher to run this site!');
+}
+
+
+/**
+ * Подключаем файл конфигурации системы.
  */
 if (!file_exists(PATH_BASE . '/config.php'))
 {
@@ -27,6 +40,18 @@ ob_start();
 require_once PATH_BASE . '/config.php';
 ob_end_clean();
 
+
+/**
+ * Подключаем основной класс системы.
+ */
+if (!file_exists(PATH_BASE . '/inc/system.php'))
+{
+    die('Unable to run this site! No such file or directory: system.php. Exiting...');
+}
+
+ob_start();
+require_once PATH_BASE . '/inc/system.php';
+ob_end_clean();
 
 
 /**
@@ -41,8 +66,6 @@ if (!file_exists(PATH_BASE . '/inc/messages.php'))
 ob_start();
 require_once PATH_BASE . '/inc/messages.php';
 ob_end_clean();
-
-
 
 
 /**

@@ -11,9 +11,8 @@
 
 defined('_CPSS') or die;
 
-class CPSS_Message {
-	
-	
+class CPSS_Message
+{
 	/**
 	 * Вывод ошибки 500 (Internal Server Error) с последующим завершением работы
 	 */
