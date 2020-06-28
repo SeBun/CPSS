@@ -70,6 +70,8 @@ final class CPSS_Helper
     public function filesMatch()
     {
         if ($this->config->presetsmatch) {
+
+        }
     }
 
 } // END class CPSS_Helper

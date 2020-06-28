@@ -58,6 +58,7 @@ $cpss->pullSite();
  * Проверка обращения к запрещенным файлам или каталогам.
  */
 $cpss->filesMatch();
+include PATH_BASE . '/ips/ipscaptcha.php';
 die(' Good');
 
 

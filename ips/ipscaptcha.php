@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CPSS .:. Всё в порядке, но...</title>
-<meta charset="utf-8" />
-<style type="text/css" >
-	.tbl,.tbl>li{list-style:none}
-	.main,body,html{height:100%}
-	.logo,.tbl>li{vertical-align:middle}
-	h1,h2{font-weight:400}
-	*{margin:0;padding:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;line-height:1.5em}
-	body{font-family:"Segoe UI","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;background:#e6e7e9}
-	.tbl{display:table;width:100%}.tbl>li{display:table-cell}.main{padding:0 0 84px}
-	.footer{font-size:11px;line-height:18px;padding:24px 12px;height:84px;margin:-84px 0 0;text-align:center}
-	.holder{padding:24px}
-	.content{max-width:1196px;margin:0 auto;width:100%;border:1px solid #ccc;background:#FFF}
-	.head{color:#FFF;background:#0072bc;padding:12px 24px}
-	.head .title{float:right}
-	.head,.head *{line-height:1em!important}
-	.logo{background:url(data:image/png;base64,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) center center no-repeat;width:128px;height:36px;display:inline-block;color:transparent;text-indent:-100%;overflow:hidden}
-	h1{font-size:32px}
-	h2{font-size:28px}
-	h1,h2{text-align:left;margin:0;padding:0}
-	hr{border:none;border-top:1px solid #ccc;height:1px;margin:24px 0}
-	.captcha{margin:12px 0}
-</style>
+    <title>CPSS .:. Всё в порядке, но...</title>
+    <meta charset="utf-8" />
+    <style type="text/css" >
+    	.tbl,.tbl>li{list-style:none}
+    	.main,body,html{height:100%}
+    	.logo,.tbl>li{vertical-align:middle}
+    	h1,h2{font-weight:400}
+    	*{margin:0;padding:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;line-height:1.5em}
+    	body{font-family:"Segoe UI","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;background:#e6e7e9}
+    	.tbl{display:table;width:100%}.tbl>li{display:table-cell}.main{padding:0 0 84px}
+    	.footer{font-size:11px;line-height:18px;padding:24px 12px;height:84px;margin:-84px 0 0;text-align:center}
+    	.holder{padding:24px}
+    	.content{max-width:1196px;margin:0 auto;width:100%;border:1px solid #ccc;background:#FFF}
+    	.head{color:#FFF;background:#0072bc;padding:12px 24px}
+    	.head .title{float:right}
+    	.head,.head *{line-height:1em!important}
+    	.logo{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAkCAYAAABBszIzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFNzEwMDI5OUI5NjkxMUVBOTFBQ0I3RkI4OUE1MUQ4NSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFNzEwMDI5QUI5NjkxMUVBOTFBQ0I3RkI4OUE1MUQ4NSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU3MTAwMjk3Qjk2OTExRUE5MUFDQjdGQjg5QTUxRDg1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU3MTAwMjk4Qjk2OTExRUE5MUFDQjdGQjg5QTUxRDg1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+4avgQQAABfdJREFUeNrsnGuIG1UU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) center center no-repeat;width:128px;height:36px;display:inline-block;color:transparent;text-indent:-100%;overflow:hidden}
+    	h1{font-size:32px}
+    	h2{font-size:28px}
+    	h1,h2{text-align:left;margin:0;padding:0}
+    	hr{border:none;border-top:1px solid #ccc;height:1px;margin:24px 0}
+    	.captcha{margin:12px 0}
+    </style>
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAIAAABuYg/PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTM0QUNCNUNCOTZCMTFFQTg2NDBDRUY0NUU3NjQzNjMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTM0QUNCNUJCOTZCMTFFQTg2NDBDRUY0NUU3NjQzNjMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUwNjI0ODFFQjk2QjExRUE4NjA2OTY3QTAxNDk1Q0EwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUwNjI0ODFGQjk2QjExRUE4NjA2OTY3QTAxNDk1Q0EwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7kJMawAABKJJREFUeNq8V2tMU2cYfs+h9Iq1d6AF5LJSHIVqYJsXOl3mSFhkibIpZmNqxlzMsmw6km0/ZsyyZJpplpi4bO6HG7sQNh2Lc6LLzDCMgIDRyUUKSqFAaaU3Sq/09Jx9RV1GC4fT4nxzfpxzvsvzfe/7vM/3fhi82wKPyvBEBmWtaH5zDeSL/2ewZPzFZ7Mm9moHXcGxXQW1FTnASWI+GmPqRiFny1rFkSdTp3xExflhGHWDUtBUmZcr4hzusjZdvwvOwDLAcAx4LJBwS1YJ9+eJNmWuGHIGnv9rAv6emtetUPqLXlUk47eZvV/ddraa3DDlhwABYWppsMpnMt/WyvjJOJeFs5MwigLjdLB+0HmmzwYW36JrVvDKH5fu10jyRFwch9kwFSBIP0F+N+g8fXFkUbD2gyVn7riOG93gC4ErCO5ZNDSuoCKHg4gD/OS9KsE7OrnuaNe/jayozsEwdbzXDndcCbI7RILdH3kATtt8tauldGwMI8dxkx5OWvGidxL9TVHxTyrhQUbKgWxhZgo7TFL2INFmD7SaPUABSQ+GSBFxBRNLYa/VyY+VKDYoUxCb6vvsuy8ZwRkEP3G/Q7YQTUYPhi/I2nkm532oz6grScUw+LTbapoJ7SmUnhhygtkbFRIcw+jAIq00rkzjf6zPeP+JNLufOHx18rOWcXAH39qauwek12x+iAkJRr8z5PRIOsdazspTT2e8ppUGCMobIlMbBsAbQkiopVTOR4kFE55YWSBJig4MTQTcBz9ZOKTyK9Si93QKtYjjm3MLPzmyFKq2qPrSSOPYDKJclVp0EsnKzCzEhISgaIXY7AmtE3PubaVSr6rRyiZC5IleG5uFNxgcDj8x5Quhp9PibeyYRL2OvJCHdnWw2biQnLJdQYJuZz2OwGYZrwO9mdy/jkzD3NJuIk5wkj7ZoJQ0GqDfgXwdUYo0wfc78ndqJKyv+xZU4Ro53+AI0oFdnPIdKpTe49J//395wdjqDA5U5hnKVDY/oRQkF8t4txwB1uc3YMS9IJnKUgW/jbvpwHpNbo1ehdwdK4n97eaCdjPjswsrlnHfmN8/5vCc9EWYny5Yrlal8yVIrkxuWrAw+Ydppm6NYplYr2hl3RYv0vUlyoK669Z9WlmE9wkbBgd0ipfR8b10DTLk8hNh0MkTB8uXILWEHhsDMJKqujLesTkTsASxLmzJ+uCqOVbQF/bV7S4rj4XhpWmJQGllBWLuuTYz41IuTOrOD5u35qJzJD4kdtLodnXp7yNR1Fiqbuyznxuert+hiQvr6DZ1p8Xj6LTEXaTuazSsVwqeQ8FjZoqn0mpWi1/6wZBQRRwg1Kd7z5avgmIGzHxMNLpNrfz2FnhmEy2/JzzChgHXTg1oaCv7bKF9d6Hg7BB9WcYgc3tsop8Gp18thCLZIlkldr1evKnZSHZZ6GdiMYrGjbsrCdJZrdku4f55ZTwqTugoEDUNQbf14d1iem3iUze/KFMdqy64f3Nh4Yeq1J3lOZJv+pkgxXOLeVC+/bhLky/mrmsZu7xR5QgSlQ0GJveXhMDmbKM+4+T69I+uWX++bIpTnx/hNfcfAQYAz+/Vy7OklUAAAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
 </head>
 <body>
 
@@ -31,7 +32,7 @@
 
 	<ul class="tbl head">
 		<li>
-			<a href="http://4pda.ru/" title="4PDA"><span class="logo">4PDA</span></a>
+			<a href="/cpssinfo" title="CPSS"><span class="logo">CPSS</span></a>
 			<h1 class="title">Кто здесь?</h1>
 		</li>
 	</ul>
@@ -78,7 +79,7 @@
 </div></li></ul>
 
 <ul class="tbl footer">
-	<li>&copy; 2005-2015, &laquo;4PDA&raquo;. 4PDA&reg; - зарегистрированный товарный знак.</li>
+	<li>&copy; 2016-<?php echo date('Y')?>, &laquo;CPSS&raquo;. Система контроля и защиты сайтов.</li>
 </ul>
 
 </body>
